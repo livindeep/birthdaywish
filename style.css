@@ -1,0 +1,142 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #1e003c, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+#entry-screen {
+  height: 100vh;
+  width: 100%;
+  background: url('images/stars.gif') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#entry-screen h1 {
+  font-size: 2.5rem;
+  animation: glow 2s infinite alternate;
+}
+
+#entry-screen p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#entry-screen button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #ff85f2;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff85f2;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff85f2, 0 0 20px #ff85f2;
+  }
+  to {
+    text-shadow: 0 0 20px #ff85f2, 0 0 30px #ff85f2;
+  }
+}
+
+#music-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #fff;
+  color: #1e003c;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+#main-content {
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff85f2;
+}
+
+header p {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #ffd6fa;
+}
+
+#photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.photo-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 0 15px #ff85f2;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.photo-description h3 {
+  margin: 0.5rem 0;
+  color: #ffd6fa;
+}
+
+.photo-description p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+#emotional-paragraphs {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ffd6fa;
+}
+
+#emotional-paragraphs h2 {
+  text-align: center;
+  color: #ff85f2;
+  margin-bottom: 1rem;
+}
+
+#emotional-paragraphs p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}

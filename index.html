@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Bubbbbba 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      overflow-x: hidden;
+    }
+
+    .gallery {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    }
+
+    .stars, .twinkling {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: repeat;
+      z-index: 0;
+    }
+
+    .stars {
+      background-image: url('https://i.imgur.com/O6mKqnt.png');
+      animation: moveStars 200s linear infinite;
+    }
+
+    .twinkling {
+      background-image: url('https://i.imgur.com/0g9RkBj.png');
+      animation: twinkle 5s ease-in-out infinite;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 0.3; }
+    }
+
+    .photo-card {
+      z-index: 2;
+      border: 5px solid #ffffffbb;
+      box-shadow: 0 0 30px #caa8ff, 0 0 80px #a370ff;
+      border-radius: 30px;
+      overflow: hidden;
+      max-width: 95%;
+      background-color: #ffffff08;
+      animation: glow 3s ease-in-out infinite alternate;
+      margin-bottom: 30px;
+    }
+
+    .galaxy-photo {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .photo-caption {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #fffc;
+      text-align: center;
+      margin: 20px 10px;
+      z-index: 2;
+    }
+
+    .floating-text {
+      font-family: 'Poppins', cursive;
+      font-size: 1.8rem;
+      color: #ffffffdd;
+      margin-top: 40px;
+      text-align: center;
+      animation: floaty 5s ease-in-out infinite;
+      z-index: 2;
+      padding: 0 20px;
+    }
+
+    .love-paragraph {
+      max-width: 900px;
+      color: #fff;
+      font-size: 1.3rem;
+      text-align: justify;
+      line-height: 2.2rem;
+      margin-top: 40px;
+      z-index: 2;
+      background-color: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ffbbf5;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 30px #ba7fff, 0 0 60px #a650ff;
+      }
+      to {
+        box-shadow: 0 0 50px #e6aaff, 0 0 90px #c17fff;
+      }
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .music-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #ff84e7, #c975ff);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 20px #ff99ff, 0 0 40px #cc66ff;
+      z-index: 3;
+      transition: all 0.3s ease;
+    }
+
+    .music-btn:hover {
+      box-shadow: 0 0 30px #ffd6ff, 0 0 60px #e0b3ff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <section class="gallery" id="gallerySection">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!-- Music Player -->
+    <button class="music-btn" onclick="toggleMusic()">🎧 Click here thngmehhh 💖</button>
+    <audio id="bgMusic" loop>
+      <source src="music/voice.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Image and Caption -->
+    <div class="photo-card">
+      <img src="images/photo1.jpg" alt="Our Love Collage" class="galaxy-photo" />
+      <p class="photo-caption">"You're the guy that all my love quotes are about." 🌌💫</p>
+    </div>
+
+    <div class="floating-text">Happy 21st Birthday, my galaxy boiiiii 💖<br />You are the universe to me 🌠</div>
+
+    <!-- Love Paragraph -->
+    <div class="love-paragraph">
+      Happy Birthday, my bubbbbbaaa 💕 My kandaaa, my azhaguuu chamattuuu pullaaaaa 💞 Today isn’t just another day — it's the day the love of my life was born. The boy who first replied to my story suggesting *The Power of Your Subconscious Mind* 🌌 — that tiny gesture changed everything.
+      <br><br>
+      We had known each other from PU days, just mutual friends passing by, never realizing fate was scripting a cosmic love story. Our first real meeting at Forum Mall still makes my heart race — I was so excited, nervous, yet drawn to you like gravity to the moon. ✨ That day... I still feel like I’m living it over and over. 
+      <br><br>
+      From college days when you used to come near just to see me 😳, to our bond growing stronger at Doddakalsandra Metro Station — each moment was a string of stars lighting up my sky. 🌠 We became inseparable — movie dates, food dates, rain-soaked kisses, late-night talks, sleepy goodnights, holding hands so tight even the wind couldn’t come between us. 
+      <br><br>
+      Even when we fought, even when we misunderstood each other — we never let go. We just couldn’t. Because life without your voice even for a day feels like silence inside a galaxy. 🌌 Our love is stubborn, fiery, soft, gentle — all at once.
+      <br><br>
+      We’ve shared a room, we’ve shared dreams, we’ve shared silence and kisses so deep it felt like we were dissolving into one another. 💋💗 Every hug from you feels like coming home after a storm. You make me feel safe. Loved. Worshipped. Desired. Alive. 
+      <br><br>
+      You, my love, are more than just a boyfriend. You’re my thngmehhh, my moonlight in chaos, my bubbbbbbaaa, my soulmate stitched from constellations made only for me. You are the boy whose presence makes my heart do somersaults. 
+      <br><br>
+      I still remember when you laughed for the first time after I entered your life — and made that cute little video edit 🥹💞 You said your life became colorful again. But love, you are the color in mine. 
+      <br><br>
+      We’ve had our fair share of chaos — tears, pain, panic. But somehow, love always brought us back. And now here we are, stronger, more in love, more dreamy. Today, on your 21st birthday, I just want to wrap you in a million kisses and whisper:
+      <br><br>
+      💌 "I want to grow old with you, bubbbbaaa. I want a forever with you that smells like comfort and kisses."
+      <br><br>
+      You are the boy I waited for in silence.
+      You are the man I want to wake up next to.
+      You are the only person who can make me blush in 2 seconds  😳💖
+      <br><br>
+      So here’s to you — the boy who makes my stars shine. The one whose name my heart chants with every beat. The one I want to cook for, cry with, dance under the stars with, and love till the universe collapses and is reborn.
+      <br><br>
+      "Every love story is beautiful, but ours feels like a galaxy scripted by fate."
+      <br><br>
+      Happy 21st, my eternal sunshine ☀️🌌 — the keeper of my smiles, the king of my cuddles, the reason why my soul sparkles. I love you. Always. Madly. Deeply. Forever. 💫💘
+    </div>
+  </section>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+      } else {
+        music.play();
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+</body>
+</html>
